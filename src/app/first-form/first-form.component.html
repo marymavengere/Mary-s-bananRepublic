@@ -1,0 +1,121 @@
+<div class="container  mb-3 ">   
+    <div class="row ">
+       <div class="firstPanel">
+            <div class="svg-container">
+                <img class="svg" src="assets/images/face.svg" alt="face image">
+            </div>
+            <div class="content">
+                <h4 class="mt-0">Front-End Challenge!</h4>
+                 <p>This is my design, hope it impresses!</p>
+                 <div class="darkbg" (click)="show = !show">
+                    <img class="darkbg-img"  [class.nextarrow]="show" src="assets/images/arrow.svg" alt="">
+                 </div>
+            </div>
+         
+       </div>
+    <div class="secondPanel">
+         <form >
+            <div class="form-group row">
+               <label for="name" class="col-sm-2 col-form-label" [(ngModel)]="name">Name</label>
+               <div class="col-sm-10">
+                   <input type="text" placeholder="Kendall Jenner" class="form-control" >
+                </div>
+            </div> 
+            
+            <div class="form-group row">
+                <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                <div class="col-sm-10">
+                    <ul>
+                        <li class="listIcon whitebg">
+                           <img class="whitebg-img" src="assets/images/mars-symbol.svg" alt="">
+                        </li>
+                         <li>
+                            <label for="Male" class="col-sm-2 col-form-label label-dist">Male</label>
+                         </li>
+                        <li class="listIcon whitebg">
+                           <img class="whitebg-img" src="assets/images/venus-symbol.svg" alt="">
+                        </li>
+                        <li>
+                            <label for="Male" class="col-sm-2 col-form-label label-dist">Female</label>
+                        </li>   
+                    </ul>
+                 
+                 </div>
+             </div> 
+            <div class="form-group row">
+                <label for="date" class="col-sm-2 col-form-label" [(ngModel)]="date">Date</label>
+                <div class="col-sm-10">
+                    <input type="date" placeholder="02/01/1983" class="form-control" >
+                 </div>
+             </div>   
+
+             <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label" [(ngModel)]="email">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" placeholder="kendall@gmail.com" class="form-control" >
+                </div>
+             </div>   
+
+             <div class="form-group row">
+                <label for="mobile" class="col-sm-2 col-form-label" [(ngModel)]="mobile">Mobile</label>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="+91 98765 43210" class="form-control"  >
+                </div>
+             </div>   
+
+             <div class="form-group row">
+                <label for="Customer" class="col-sm-2 col-form-label" [(ngModel)]="customer">Customer ID</label>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="57682-ERD348 45" class="form-control"> 
+                </div>
+             </div>   
+
+             <div class="form-group row">
+                <label for="Membership" class="col-sm-2 col-form-label">Membership</label>
+                <div class="col-sm-10">
+                        <ul>
+                            <li class="listIcon dark-cardbg">
+                                <img class="whitebg-img " src="assets/images/card--white.svg" alt="">
+                             </li>
+                             <li>
+                                <label for="Classic" class="col-sm-2 col-form-label label-dist">Classic</label>
+                             </li>
+                            <li class="listIcon whitebg">
+                               <img class="whitebg-img " src="assets/images/card.svg" alt="">
+                            </li>
+                            <li>
+                                <label for="Silver" class="col-sm-2 col-form-label label-dist ">Silver</label>
+                            </li>  
+                            <li class="listIcon whitebg ">
+                                <img class="whitebg-img " src="assets/images/card.svg" alt="">
+                             </li>
+                             <li>
+                                 <label for="Gold" class="col-sm-2 col-form-label label-dist">Gold</label>
+                             </li>   
+                        </ul>
+                </div>
+             </div>  
+             <div class="form-group float">
+             <button type="cancel" class="btn btn-primary btn-padding cancel-btn" (click)="clear()" >CANCEL</button>
+             <button type="save" class="btn btn-primary btn-padding save-btn">SAVE</button>
+             </div>
+         </form>
+    </div>
+
+       <div class="thirdPanel" [class.opened]="show">
+          <div class="content-second">
+            <h2>My World today</h2>
+            <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua.<b><u>View all days </u></b>Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
